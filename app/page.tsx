@@ -164,14 +164,13 @@ export default function Home() {
           <form
             name="apartment-rent-enquiry"
             method="POST"
-            action="/"
+            action="/thank-you"
             data-netlify="true"
             netlify-honeypot="bot-field"
             className="space-y-6"
           >
             {/* Netlify hidden fields */}
             <input type="hidden" name="form-name" value="apartment-rent-enquiry" />
-            <input type="hidden" name="redirect" value="/thank-you" />
             <input type="hidden" name="bot-field" />
 
             {/* Property metadata */}
