@@ -1,25 +1,26 @@
-
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
-
       {/* Contact Form Card */}
       <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
         <div className="border-l-4 border-indigo-600 pl-4 mb-6">
           <h2 className="text-3xl font-bold text-gray-900">
             Enquire About This Apartment
           </h2>
-          <p className="text-gray-600 mt-2">Fill out the form below and we'll get back to you shortly</p>
+          <p className="text-gray-600 mt-2">
+            Fill out the form below and we'll get back to you shortly
+          </p>
         </div>
 
+        {/* === Form === */}
         <form
           name="apartment-rent-enquiry"
           method="POST"
-          action="/"
+          action="https://kolimi-heights-ulsoor-2bhk.netlify.app/"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          className="space-y-6"
         >
-
           {/* Netlify hidden fields */}
           <input type="hidden" name="form-name" value="apartment-rent-enquiry" />
           <input type="hidden" name="bot-field" />
@@ -39,8 +40,8 @@ export default function ContactPage() {
               type="text"
               name="name"
               required
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
               placeholder="Enter your full name"
+              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
             />
           </div>
 
@@ -52,8 +53,8 @@ export default function ContactPage() {
               type="tel"
               name="phone"
               required
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
               placeholder="Enter your phone number"
+              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
             />
           </div>
 
@@ -64,8 +65,8 @@ export default function ContactPage() {
             <input
               type="email"
               name="email"
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
               placeholder="Enter your email address"
+              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
             />
           </div>
 
@@ -101,35 +102,10 @@ export default function ContactPage() {
             type="submit"
             className="w-full rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-700 px-6 py-4 font-semibold text-white shadow-lg shadow-indigo-500/30 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/40 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-[0.98]"
           >
-            <span className="flex items-center justify-center">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              Send Enquiry
-            </span>
+            Send Enquiry
           </button>
         </form>
       </div>
-      {/* Back Button */}
-      <a
-        href="/"
-        className="mt-8 inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-700 px-6 py-3 font-semibold text-white shadow-lg shadow-indigo-500/30 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/40 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/50"
-      >
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        Back to Listing
-      </a>
-      {/* Footer Note */}
-      <div className="mt-6 text-center">
-        <p className="text-sm text-gray-600">
-          <svg className="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-          </svg>
-          Your information is safe and will only be used to contact you regarding this property
-        </p>
-      </div>
-
     </main>
   );
 }
