@@ -70,8 +70,8 @@ export default function Home() {
 
           {/* Description */}
           <p className="text-lg text-gray-700 leading-relaxed">
-            Well-maintained <strong>2 BHK apartment</strong> available for rent in
-            <strong> Kolimi Heights, Ulsoor</strong>. Ideal for families or female tenants.
+            Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
+            <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
           </p>
 
           {/* Details Grid */}
@@ -148,7 +148,7 @@ export default function Home() {
             />
             <FeatureCard
               label="Brokerage Fee"
-              value="None"
+              value="Zero"
               bg="bg-gradient-to-br from-emerald-50 to-green-50"
               icon={
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center mr-4 bg-gradient-to-br from-emerald-50 to-green-50">
@@ -176,7 +176,7 @@ export default function Home() {
           <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Amenity example */}
-              <DetailItem label="Amenities" value="Lift, Gated Community" />
+              <DetailItem label="Amenities" value="Lift, Gated Community, 24 Hour Security, Power Backup" />
               <DetailItem label="Parking" value="1 Car Parking" />
               <DetailItem label="Preferred" value="Family / Female tenants" />
               <OwnerDetails />
@@ -224,10 +224,10 @@ const OwnerDetails = () => (
       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
     </svg>
     <div>
-      <p className="font-semibold text-gray-900">Owner Details</p>
+      <p className="font-semibold text-gray-900">Contact Owner</p>
       <a href="tel:+919380364859" className="block text-gray-600 hover:text-indigo-600">Kavitha Reddy – 9380364859</a>
       <a
-        href="https://wa.me/919380364859?text=I'm%20interested%20in%20your%20flat%20for%20rent"
+        href="https://wa.me/919380364859?text=I'm%20interested%20in%20your%20apartment%20for%20rent"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-1 inline-flex items-center text-green-600 hover:text-green-700 font-medium"
@@ -250,10 +250,26 @@ const ExternalLinks = () => (
           href="https://sites.google.com/view/flat-rent-ulsoor-bangalore/2bhk-flat-for-rent-in-ulsoor-near-metro"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-1 text-indigo-600 hover:underline font-medium"
+          className="block mt-6 overflow-hidden rounded-xl border hover:shadow-lg transition"
         >
-          View full property details
+          <img
+            src="/images/ulsoor-2bhk-dining1.jpg"
+            alt="2BHK Flat in Ulsoor"
+            className="h-40 w-full object-cover"
+          />
+          <div className="p-4 bg-white">
+            <h3 className="font-semibold text-gray-900">
+              2BHK Flat for Rent – Ulsoor
+            </h3>
+            <p className="text-sm text-gray-600 mt-1">
+              Near metro, Indiranagar and Behind Ashram • Spacious • Well Ventilated
+            </p>
+            <span className="text-sm font-medium text-indigo-600 mt-2 inline-block">
+              View full property details →
+            </span>
+          </div>
         </a>
+
       </p>
     </div>
     <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
@@ -269,24 +285,24 @@ const ExternalLinks = () => (
         ></iframe>
       </div>
     </div>
-<div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
-  <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Location</h3>
-  <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-    <iframe
-      className="absolute top-0 left-0 w-full h-full rounded-lg"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789!2d77.615!3d12.978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13abcd12345%3A0x123456789abcdef!2sKolimi%20Heights!5e0!3m2!1sen!2sin!4v1678901234567!5m2!1sen!2sin"
-      width="600"
-      height="450"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
+    <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
+      <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Location</h3>
+      <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+        <iframe
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789!2d77.615!3d12.978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13abcd12345%3A0x123456789abcdef!2sKolimi%20Heights!5e0!3m2!1sen!2sin!4v1678901234567!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
 
     <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
-     
+
       <p className="mt-2 text-sm text-gray-600">
         GOOGLE MAP:
         <a
