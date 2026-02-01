@@ -164,7 +164,7 @@ export default function Home() {
           <form
             name="apartment-rent-enquiry"
             method="POST"
-            action="https://kolimi-heights-ulsoor-2bhk.netlify.app/"
+            action="/"
             data-netlify="true"
             netlify-honeypot="bot-field"
             className="space-y-6"
