@@ -286,18 +286,17 @@ const ExternalLinks = () => (
       </div>
     </div>
     <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Location</h3>
-      <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+      <h3 className="text-lg font-semibold text-gray-900 mb-4">
+        Property Location
+      </h3>
+
+      <div className="relative overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
         <iframe
-          className="absolute top-0 left-0 w-full h-full rounded-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789!2d77.615!3d12.978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13abcd12345%3A0x123456789abcdef!2sKolimi%20Heights!5e0!3m2!1sen!2sin!4v1678901234567!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.google.com/maps?q=Kolimi+Heights+Ulsoor+Bangalore&output=embed"
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+          style={{ border: 0 }}
+        />
       </div>
     </div>
 
