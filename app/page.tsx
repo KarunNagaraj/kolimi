@@ -77,8 +77,8 @@ export default function Home() {
           {/* Details Grid */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             <FeatureCard
-              label="Monthly Rent (Maintenance Included)"
-              value="₹58,000"
+              label="Monthly Rent & Maintenance"
+              value="₹54,000 + ₹2,400(Maintenance)"
               bg="bg-gradient-to-br from-indigo-50 to-blue-50"
               icon={
                 <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
