@@ -9,10 +9,7 @@ images: {
 unoptimized: true, // needed for static export
 },
 
-// Avoid build errors on Netlify
-eslint: {
-ignoreDuringBuilds: true,
-},
+ 
 
 // Optional: trailing slash helps static hosting
 trailingSlash: true,
