@@ -176,7 +176,7 @@ export default function Home() {
           <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Amenity example */}
-              <DetailItem label="Amenities" value="Lift, Gated Community, 24 Hour Security, Power Backup" />
+              <DetailItem label="Amenities" value="Lift, Gated Community, 24 Hour Security, Power Baackup" />
               <DetailItem label="Parking" value="1 Car Parking" />
               <DetailItem label="Preferred" value="Family / Female tenants" />
               <OwnerDetails />
@@ -200,6 +200,14 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <form
+      name="apartment-rent-enquiry"
+      method="POST"
+      data-netlify="true"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="apartment-rent-enquiry" />
+    </form>
     </main>
   );
 }
@@ -315,4 +323,5 @@ const ExternalLinks = () => (
       </p>
     </div>
   </div>
+  
 ); 
