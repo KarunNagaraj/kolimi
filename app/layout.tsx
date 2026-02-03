@@ -1,5 +1,6 @@
-import "./globals.css";
+import "./globals.css"; 
 import { ReactNode } from "react";
+import HeaderMenu from "./components/HeaderMenu";
 
 export const metadata = {
   title: "Kolimi Heights – Apartment Rental",
@@ -16,9 +17,13 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en">
-       <head />
-      <body className="min-h-screen">{children}</body>
+ <html lang="en">
+  <head/>
+       <body className="min-h-screen">
+        <HeaderMenu />
+        {/* Page content */}
+        {children}
+      </body>
     </html>
   );
 }

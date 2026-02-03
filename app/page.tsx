@@ -4,10 +4,12 @@ import { ReactNode } from "react";
 import PropertyFeatures from "./components/PropertyFeatures";
 
 export const metadata = {
-  title: "2 BHK Apartment for Rent in Ulsoor – Kolimi Heights | Owner",
+  title: "2 BHK Apartment for Rent in Ulsoor, Bangalore | Owner | Near Metro",
   description:
-    "2 BHK apartment for rent in Kolimi Heights, Ulsoor. 1290 sqft, 2 bathrooms, balcony, lift, gated community, car parking. Owner listing.",
+    "Owner-listed 2 BHK apartment for rent in Ulsoor, Bangalore. 1290 sqft with 2 bathrooms, balcony, gated community, lift & car parking. Near Ulsoor Metro.",
 };
+
+
 
 type FeatureCardProps = {
   icon: ReactNode;
@@ -53,7 +55,7 @@ export default function Home() {
           {/* Title */}
           <div className="border-l-4 border-indigo-600 pl-4 mb-6">
             <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
-              2 BHK Apartment for Rent in Ulsoor
+              2 BHK Apartment for Rent in Ulsoor, Bangalore
             </h1>
           </div>
 
@@ -72,7 +74,27 @@ export default function Home() {
           <p className="text-lg text-gray-700 leading-relaxed">
             Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
             <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
+            Searching for a 2 BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
+            Renting a 2BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.
           </p>
+          <br></br>
+          <h2 className="text-xl font-bold text-gray-900 tracking-tight">Why Choose Ulsoor for a 2 BHK Apartment?</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Ulsoor is known for its balanced lifestyle — quiet residential streets combined with quick access to commercial areas. The locality is close to Indiranagar, MG Road, Domlur, and CBD, making daily commuting simple.
+            The presence of Ulsoor Metro Station on the Purple Line significantly increases demand for 2 BHK apartments for rent in Ulsoor.
+          </p>
+          <br></br>
+          <h2 className="text-xl font-bold text-gray-900 tracking-tight">Connectivity, Schools & Daily Conveniences</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Ulsoor offers seamless connectivity via metro, bus routes, and arterial roads. Leading schools, hospitals, supermarkets, and restaurants are located nearby.
+            This makes Ulsoor a preferred choice for tenants looking for spacious 2 BHK flats near metro stations in Bangalore.
+          </p>
+          <br></br>
+          <p className="text-l font-bold text-gray-900 tracking-tight">
+            Apartment Tour & Google Map: <a href="/owner-2bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
+              owner-listed 2 BHK apartment for rent in Ulsoor</a> with zero brokerage.
+          </p>
+
 
           {/* Details Grid */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -182,13 +204,11 @@ export default function Home() {
               <OwnerDetails />
             </div>
           </div>
+          {/* Property Features */}
 
-          {/* Google Sites & YouTube Links */}
-          <ExternalLinks />
         </div>
 
-        {/* Property Features */}
-        <PropertyFeatures />
+
 
         {/* Contact Owner */}
         <div className="mt-6">
@@ -201,13 +221,13 @@ export default function Home() {
         </div>
       </div>
       <form
-      name="apartment-rent-enquiry"
-      method="POST"
-      data-netlify="true"
-      hidden
-    >
-      <input type="hidden" name="form-name" value="apartment-rent-enquiry" />
-    </form>
+        name="apartment-rent-enquiry"
+        method="POST"
+        data-netlify="true"
+        hidden
+      >
+        <input type="hidden" name="form-name" value="apartment-rent-enquiry" />
+      </form>
     </main>
   );
 }
@@ -249,79 +269,3 @@ const OwnerDetails = () => (
   </div>
 );
 
-const ExternalLinks = () => (
-  <div className="mt-6 space-y-4">
-    <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <p className="mt-2 text-sm text-gray-600">
-        Further info:
-        <a
-          href="https://sites.google.com/view/flat-rent-ulsoor-bangalore/2bhk-flat-for-rent-in-ulsoor-near-metro"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block mt-6 overflow-hidden rounded-xl border hover:shadow-lg transition"
-        >
-          <img
-            src="/images/ulsoor-2bhk-dining1.jpg"
-            alt="2BHK Flat in Ulsoor"
-            className="h-40 w-full object-cover"
-          />
-          <div className="p-4 bg-white">
-            <h3 className="font-semibold text-gray-900">
-              2BHK Flat for Rent – Ulsoor
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              Near metro, Indiranagar and Behind Ashram • Spacious • Well Ventilated
-            </p>
-            <span className="text-sm font-medium text-indigo-600 mt-2 inline-block">
-              View full property details →
-            </span>
-          </div>
-        </a>
-
-      </p>
-    </div>
-    <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Video</h3>
-      <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-        <iframe
-          className="absolute top-0 left-0 w-full h-full rounded-lg"
-          src="https://www.youtube.com/embed/tOYPJdxeOIs"
-          title="2BHK Apartment Ulsoor Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-    <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">
-        Property Location
-      </h3>
-
-      <div className="relative overflow-hidden rounded-lg" style={{ paddingBottom: '56.25%' }}>
-        <iframe
-          className="absolute top-0 left-0 w-full h-full"
-          src="https://www.google.com/maps?q=Kolimi+Heights+Ulsoor+Bangalore&output=embed"
-          loading="lazy"
-          style={{ border: 0 }}
-        />
-      </div>
-    </div>
-
-    <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
-
-      <p className="mt-2 text-sm text-gray-600">
-        GOOGLE MAP:
-        <a
-          href="https://goo.gl/maps/UKXqUScK3b92"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-1 text-indigo-600 hover:underline font-medium"
-        >
-          Kolimi Heights
-        </a>
-      </p>
-    </div>
-  </div>
-  
-); 
