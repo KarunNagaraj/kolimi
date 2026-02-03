@@ -9,9 +9,10 @@ export default function HeaderMenu() {
   const normalizePath = (path: string) => path.replace(/\/$/, "");
 
   const menuItems = [
-    { label: "2 BHK Flat Ulsoor", href: "/" },
-    { label: "Ulsoor 2BHK Fetures ", href: "/2bhk-apartment-for-rent-ulsoor" },
+    { label: "2BHK Flat Ulsoor", href: "/" },
+    { label: "2BHK Ulsoor Features ", href: "/2bhk-apartment-for-rent-ulsoor" },
     { label: "Owner Listed Flat Videos", href: "/owner-2bhk-flat-for-rent-bangalore" },
+    { label: "2BHK Flat FAQ", href: "/2bhk-flat-ulsoor-faq" },
   ];
 
   return (

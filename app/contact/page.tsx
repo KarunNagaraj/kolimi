@@ -1,3 +1,7 @@
+
+import { inputClass, textareaClass, selectClass, buttonClass, labelClass } from "../styles/formStyles";
+
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -31,54 +35,34 @@ export default function ContactPage() {
           <input type="hidden" name="Deposit" value="₹1,00,000" />
           <input type="hidden" name="Config" value="2 BHK, 2 Bath, Balcony" />
 
-          {/* Fields */}
+
+          {/* === Fields === */}
           <div className="group">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className={labelClass}>
               Name <span className="text-red-500">*</span>
             </label>
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Enter your full name"
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
-            />
+            <input type="text" name="name" required placeholder="Enter your full name" className={inputClass} />
           </div>
 
           <div className="group">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className={labelClass}>
               Phone <span className="text-red-500">*</span>
             </label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              placeholder="Enter your phone number"
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
-            />
+            <input type="tel" name="phone" required placeholder="Enter your phone number" className={inputClass} />
           </div>
 
           <div className="group">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Email
+            <label className={labelClass}>
+              Email<span className="text-red-500">*</span>
             </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none"
-            />
+            <input type="email" name="email" placeholder="Enter your email address" className={inputClass} />
           </div>
 
           <div className="group">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className={labelClass}>
               Tenant Type <span className="text-red-500">*</span>
             </label>
-            <select
-              name="tenant_type"
-              required
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%236b7280%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22M6%208l4%204%204-4%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.5em] bg-[right_0.5rem_center] bg-no-repeat"
-            >
+            <select name="tenant_type" required className={selectClass}>
               <option value="">Select</option>
               <option value="Family">Family</option>
               <option value="Female">Female</option>
@@ -87,24 +71,52 @@ export default function ContactPage() {
           </div>
 
           <div className="group">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows={4}
-              placeholder="Move-in date, number of occupants, etc."
-              className="w-full rounded-lg border-2 border-gray-200 px-4 py-3 text-gray-900 transition-all duration-200 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none resize-none"
-            />
+            <label className={labelClass}>Message</label>
+            <textarea name="message" rows={4} placeholder="Move-in date, number of occupants, etc." className={textareaClass} />
           </div>
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-linear-to-r from-indigo-600 to-indigo-700 px-6 py-4 font-semibold text-white shadow-lg shadow-indigo-500/30 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/40 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-[0.98]"
+            className={buttonClass}
           >
             Send Enquiry
           </button>
+
         </form>
+        {/* Owner Contact Info */}
+        <div className="mt-8 p-6 bg-indigo-50 border-l-4 border-indigo-600 rounded-lg">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            Contact the Owner Directly
+          </h3>
+          <p className="text-gray-700">
+            Email:{" "}
+            <a
+              href="mailto:kavithanagaraj.p@gmail.com"
+              className="text-indigo-600 hover:underline"
+            >
+              kavithanagaraj.p@gmail.com
+            </a>
+          </p>
+          <p className="text-gray-700 mt-1">
+            Mobile:{" "}
+            <a href="tel:+919380364859" className="text-indigo-600 hover:underline">
+              +91 93803 64859
+            </a>
+          </p>
+          <a href="tel:+919380364859" className="block text-gray-600 hover:text-indigo-600">Kavitha Reddy </a>
+          <a
+            href="https://wa.me/919380364859?text=I'm%20interested%20in%20your%20apartment%20for%20rent"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 inline-flex items-center text-green-600 hover:text-green-700 font-medium"
+          >
+            <svg className="w-4 h-4 mr-1" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M19.11 17.44c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.18-1.34-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.41.12-.55.13-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.64 1.11 2.82.14.18 1.93 2.95 4.67 4.13.65.28 1.16.45 1.56.58.66.21 1.26.18 1.74.11.53-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z" />
+            </svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
       </div>
     </main>
   );
