@@ -1,0 +1,95 @@
+/* =========================================
+   EXACT TAILWIND PASTEL GRADIENT CLONES
+   Direction: bg-gradient-to-br
+   Shades: 50 → 50
+   ========================================= */
+
+/* Indigo → Blue */
+.bg-gradient-indigo-50-blue-50 {
+  background: linear-gradient(
+    to bottom right,
+    #eef2ff, /* indigo-50 */
+    #eff6ff  /* blue-50 */
+  );
+}
+
+/* Pink → Rose */
+.bg-gradient-pink-50-rose-50 {
+  background: linear-gradient(
+    to bottom right,
+    #fdf2f8, /* pink-50 */
+    #fff1f2  /* rose-50 */
+  );
+}
+
+/* Violet → Purple */
+.bg-gradient-violet-50-purple-50 {
+  background: linear-gradient(
+    to bottom right,
+    #f5f3ff, /* violet-50 */
+    #faf5ff  /* purple-50 */
+  );
+}
+
+/* Emerald → Teal */
+.bg-gradient-emerald-50-teal-50 {
+  background: linear-gradient(
+    to bottom right,
+    #ecfdf5, /* emerald-50 */
+    #f0fdfa  /* teal-50 */
+  );
+}
+
+/* Cyan → Sky */
+.bg-gradient-cyan-50-sky-50 {
+  background: linear-gradient(
+    to bottom right,
+    #ecfeff, /* cyan-50 */
+    #f0f9ff  /* sky-50 */
+  );
+}
+
+/* Amber → Yellow */
+.bg-gradient-amber-50-yellow-50 {
+  background: linear-gradient(
+    to bottom right,
+    #fffbeb, /* amber-50 */
+    #fefce8  /* yellow-50 */
+  );
+}
+
+/* Orange → Amber */
+.bg-gradient-orange-50-amber-50 {
+  background: linear-gradient(
+    to bottom right,
+    #fff7ed, /* orange-50 */
+    #fffbeb  /* amber-50 */
+  );
+}
+
+/* Lime → Green */
+.bg-gradient-lime-50-green-50 {
+  background: linear-gradient(
+    to bottom right,
+    #f7fee7, /* lime-50 */
+    #f0fdf4  /* green-50 */
+  );
+}
+
+/* Slate → Gray (neutral UI) */
+.bg-gradient-slate-50-gray-50 {
+  background: linear-gradient(
+    to bottom right,
+    #f8fafc, /* slate-50 */
+    #f9fafb  /* gray-50 */
+  );
+}
+
+/* Zinc → Neutral */
+.bg-gradient-zinc-50-neutral-50 {
+  background: linear-gradient(
+    to bottom right,
+    #fafafa, /* zinc-50 */
+    #fafafa  /* neutral-50 */
+  );
+}

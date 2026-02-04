@@ -1,7 +1,10 @@
 // app/page.tsx
 import Image from "next/image";
 import { ReactNode } from "react";
-import PropertyFeatures from "./components/PropertyFeatures";
+import { cta, layout, card, typography, featureCard, grid, section, buttons, icons } from "./styles/mainStyles";
+
+// index.tsx or _app.tsx
+import './styles/friendly-pastel-gradients.css';
 
 export const metadata = {
   title: "2 BHK Apartment for Rent in Ulsoor, Bangalore | Owner | Near Metro",
@@ -27,40 +30,52 @@ function FeatureCard({
   textColor = "text-gray-800",
 }: FeatureCardProps) {
   return (
-    <div className={`flex items-center p-4 ${bg} rounded-xl`}>
-      <div className={`flex-shrink-0 w-12 h-12 flex items-center justify-center mr-4 ${textColor}`}>
+    <div className={`${featureCard.wrapper} ${bg}`}>
+      <div className={`${featureCard.iconWrapper} ${textColor}`}>
         {icon}
       </div>
       <div>
         {value ? (
           <>
-            <p className="text-sm font-medium text-gray-600">{label}</p>
-            <p className="text-2xl font-bold text-gray-900">{value}</p>
+            <p className={featureCard.label}>{label}</p>
+            <p className={featureCard.value}>{value}</p>
           </>
         ) : (
-          <span className="font-medium text-gray-800">{label}</span>
+          <span className={featureCard.textOnly}>{label}</span>
         )}
       </div>
     </div>
   );
 }
 
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl">
+    <main className={layout.page}>
+      <a
+        href="/contact"
+        aria-label="Contact the owner"
+        className={cta.contactOwner}
+      >
+        Contact Owner
+      </a>
+
+
+
+      <div className={layout.container}>
+
 
         {/* Header Card */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border border-gray-100">
+        <div className={`${card.base} ${card.padded} mb-8`}>
           {/* Title */}
-          <div className="border-l-4 border-indigo-600 pl-4 mb-6">
-            <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
+          <div className={section.borderedLeft}>
+            <h1 className={typography.h1}>
               2 BHK Apartment for Rent in Ulsoor, Bangalore
             </h1>
           </div>
 
           {/* Apartment Image */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 mb-8">
+          <div className={card.imageWrapper}>
             <Image
               src="/images/2BHK FLAT RENT ULSOOR.jpg"
               alt="2 BHK Apartment for Rent at Kolimi Heights, Ulsoor, Bangalore"
@@ -69,41 +84,16 @@ export default function Home() {
               className="w-full h-64 object-cover rounded-xl"
             />
           </div>
-
-          {/* Description */}
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
-            <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
-            Searching for a 2 BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
-            Renting a 2BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.
-          </p>
-          <br></br>
-          <h2 className="text-xl font-bold text-gray-900 tracking-tight">Why Choose Ulsoor for a 2 BHK Apartment?</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Ulsoor is known for its balanced lifestyle — quiet residential streets combined with quick access to commercial areas. The locality is close to Indiranagar, MG Road, Domlur, and CBD, making daily commuting simple.
-            The presence of Ulsoor Metro Station on the Purple Line significantly increases demand for 2 BHK apartments for rent in Ulsoor.
-          </p>
-          <br></br>
-          <h2 className="text-xl font-bold text-gray-900 tracking-tight">Connectivity, Schools & Daily Conveniences</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Ulsoor offers seamless connectivity via metro, bus routes, and arterial roads. Leading schools, hospitals, supermarkets, and restaurants are located nearby.
-            This makes Ulsoor a preferred choice for tenants looking for spacious 2 BHK flats near metro stations in Bangalore.
-          </p>
-          <br></br>
-          <p className="text-l font-bold text-gray-900 tracking-tight">
-            Apartment Tour & Google Map: <a href="/owner-2bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
-              owner-listed 2 BHK apartment for rent in Ulsoor</a> with zero brokerage.
-          </p>
-
+ 
 
           {/* Details Grid */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className={grid.features}>
             <FeatureCard
               label="Monthly Rent & Maintenance"
               value="₹54,000 + ₹2,400(Maintenance)"
-              bg="bg-gradient-to-br from-indigo-50 to-blue-50"
+              bg="bg-gradient-indigo"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                <div className={featureCard.iconWrapper}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 3h12M6 7h12M9 21l6-8H9a5 5 0 110-10" />
                   </svg>
@@ -115,7 +105,7 @@ export default function Home() {
               value="₹3,00,000"
               bg="bg-gradient-to-br from-amber-50 to-orange-50"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                <div className={featureCard.iconWrapper}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -127,7 +117,7 @@ export default function Home() {
               value="1290 sqft"
               bg="bg-gradient-to-br from-emerald-50 to-green-50"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                <div className={featureCard.iconWrapper}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                   </svg>
@@ -139,7 +129,7 @@ export default function Home() {
               value="2 Bath, Balcony"
               bg="bg-gradient-to-br from-purple-50 to-pink-50"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                <div className={featureCard.iconWrapper}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
@@ -149,11 +139,11 @@ export default function Home() {
             <FeatureCard
               label="Availability"
               value="4th March 2026"
-              bg="bg-gradient-to-br from-blue-50 to-indigo-50"
+              bg="bg-pastel-lavender"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center mr-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+                <div className={featureCard.iconWrapper}>
                   <svg
-                    className="w-6 h-6 text-blue-600"
+                    className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -171,11 +161,11 @@ export default function Home() {
             <FeatureCard
               label="Brokerage Fee"
               value="Zero"
-              bg="bg-gradient-to-br from-emerald-50 to-green-50"
+              bg="bg-pastel-pink"
               icon={
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center mr-4 bg-gradient-to-br from-emerald-50 to-green-50">
+                <div className={featureCard.iconWrapper}>
                   <svg
-                    className="w-6 h-6 text-green-600"
+                    className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -195,8 +185,8 @@ export default function Home() {
           </div>
 
           {/* Additional Details */}
-          <div className="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className={section.mutedBox}>
+            <div className={grid.details}>
               {/* Amenity example */}
               <DetailItem label="Amenities" value="Lift, Gated Community, 24 Hour Security, Power Baackup" />
               <DetailItem label="Parking" value="1 Car Parking" />
@@ -205,7 +195,31 @@ export default function Home() {
             </div>
           </div>
           {/* Property Features */}
-
+          <br></br>
+          {/* Description */}
+          <p className={typography.body}>
+            Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
+            <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
+            Searching for a 2 BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
+            Renting a 2BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.
+          </p>
+          <br></br>
+          <h2 className={typography.h2}>Why Choose Ulsoor for a 2 BHK Apartment?</h2>
+          <p className={typography.body}>
+            Ulsoor is known for its balanced lifestyle — quiet residential streets combined with quick access to commercial areas. The locality is close to Indiranagar, MG Road, Domlur, and CBD, making daily commuting simple.
+            The presence of Ulsoor Metro Station on the Purple Line significantly increases demand for 2 BHK apartments for rent in Ulsoor.
+          </p>
+          <br></br>
+          <h2 className={typography.h2}>Connectivity, Schools & Daily Conveniences</h2>
+          <p className={typography.body}>
+            Ulsoor offers seamless connectivity via metro, bus routes, and arterial roads. Leading schools, hospitals, supermarkets, and restaurants are located nearby.
+            This makes Ulsoor a preferred choice for tenants looking for spacious 2 BHK flats near metro stations in Bangalore.
+          </p>
+          <br></br>
+          <p className={typography.body}>
+            Apartment Tour & Google Map: <a href="/owner-2bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
+              owner-listed 2 BHK apartment for rent in Ulsoor</a> with zero brokerage.
+          </p>
         </div>
 
 
@@ -214,7 +228,7 @@ export default function Home() {
         <div className="mt-6">
           <a
             href="/contact"
-            className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            className={buttons.primary}
           >
             Contact Owner
           </a>
@@ -233,18 +247,19 @@ export default function Home() {
 }
 
 // Reusable components
-
 const DetailItem = ({ label, value }: { label: string; value: string }) => (
   <div className="flex items-start">
-    <svg className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+    <svg className={icons.detail} fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+
     </svg>
     <div>
-      <p className="font-semibold text-gray-900">{label}</p>
-      <p className="text-gray-600">{value}</p>
+      <p className={typography.label}>{label}</p>
+      <p className={typography.value}>{value}</p>
     </div>
   </div>
 );
+
 
 const OwnerDetails = () => (
   <div className="flex items-start">

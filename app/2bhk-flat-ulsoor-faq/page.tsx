@@ -1,11 +1,13 @@
 "use client";
 
+import { card } from "../styles/mainStyles";
+
 const textStyles = {
-  pageTitle: "text-3xl font-bold text-gray-900 mb-8",
+  pageTitle: "text-3xl font-bold text-gray-900 mb-4",
   question: "font-semibold text-gray-800",
   answer: "text-gray-700 mt-2",
-  container: "max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8  ",
-  faqCard: "bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200",
+  container: "max-w-3xl mx-auto  px-1 sm:px-6 lg:px-8  ",
+  faqCard: "bg-gray-80 p-4 rounded-xl shadow-sm border border-gray-200",
 };
 
 const faqData = [
@@ -61,20 +63,22 @@ const faqData = [
 
 export default function FAQPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-60 via-blue-50 to-indigo-60 py-12 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-6 px-4 sm:px-6 lg:px-8">
 
-      <div className={textStyles.container}>
-        <h1 className={textStyles.pageTitle}>
-          Frequently Asked Questions – 2BHK Flat in Ulsoor
-        </h1>
+      <div className={"bg-white rounded-2xl shadow-xl border border-gray-100 py-4 mb-1"}>
+        <div className={textStyles.container}>
+          <h1 className={textStyles.pageTitle}>
+            FAQ – 2BHK Flat in Ulsoor
+          </h1>
 
-        <div className="space-y-6">
-          {faqData.map((faq, index) => (
-            <div key={index} className={textStyles.faqCard}>
-              <p className={textStyles.question}>Q. {faq.question}</p>
-              <p className={textStyles.answer}>{faq.answer}</p>
-            </div>
-          ))}
+          <div className="space-y-4">
+            {faqData.map((faq, index) => (
+              <div key={index} className={textStyles.faqCard}>
+                <p className={textStyles.question}>Q. {faq.question}</p>
+                <p className={textStyles.answer}>{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>

@@ -1,0 +1,83 @@
+/* =========================================
+   FRIENDLY-NAME PASTEL GRADIENTS
+   Soft pastel, light & airy
+   ========================================= */
+
+/* Indigo Breeze (soft blue-indigo) */
+.bg-gradient-indigo {
+  background: linear-gradient(
+    to bottom right,
+    #eef2ff, /* indigo-50 */
+    #eff6ff  /* blue-50 */
+  );
+}
+
+/* Mint Fresh (soft green-teal) */
+.bg-gradient-mint {
+  background: linear-gradient(
+    to bottom right,
+    #ecfdf5, /* emerald-50 */
+    #f0fdfa  /* teal-50 */
+  );
+}
+
+/* Lavender Dream (soft violet-purple) */
+.bg-gradient-lavender {
+  background: linear-gradient(
+    to bottom right,
+    #f5f3ff, /* violet-50 */
+    #faf5ff  /* purple-50 */
+  );
+}
+
+/* Pink Blush (soft pink-rose) */
+.bg-gradient-pink {
+  background: linear-gradient(
+    to bottom right,
+    #fdf2f8, /* pink-50 */
+    #fff1f2  /* rose-50 */
+  );
+}
+
+/* Sky Calm (soft cyan-sky) */
+.bg-gradient-sky {
+  background: linear-gradient(
+    to bottom right,
+    #ecfeff, /* cyan-50 */
+    #f0f9ff  /* sky-50 */
+  );
+}
+
+/* Sunset Glow (soft orange-amber) */
+.bg-gradient-sunset {
+  background: linear-gradient(
+    to bottom right,
+    #fff7ed, /* orange-50 */
+    #fffbeb  /* amber-50 */
+  );
+}
+
+/* Lemon Light (soft yellow-amber) */
+.bg-gradient-lemon {
+  background: linear-gradient(
+    to bottom right,
+    #fefce8, /* yellow-50 */
+    #fffbeb  /* amber-50 */
+  );
+}
+
+/* Neutral Soft (slate-gray neutral) */
+.bg-gradient-neutral {
+  background: linear-gradient(
+    to bottom right,
+    #f8fafc, /* slate-50 */
+    #f9fafb  /* gray-50 */
+  );
+}
+
+.bg-pastel-yellow  { background-color: #FAEDCB; }
+.bg-pastel-mint    { background-color: #C9E4DE; }
+.bg-pastel-blue    { background-color: #C6DEF1; }
+.bg-pastel-lavender{ background-color: #DBCDF0; }
+.bg-pastel-pink    { background-color: #F2C6DE; }
+.bg-pastel-peach   { background-color: #F7D9C4; }
