@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import { cta, layout, card, typography, featureCard, grid, section, buttons, icons } from "./styles/mainStyles";
 
 // index.tsx or _app.tsx
+//MENU: { label: "2BHK Ulsoor 🏠", href: "/" },
 import './styles/friendly-pastel-gradients.css';
 
 export const metadata = {

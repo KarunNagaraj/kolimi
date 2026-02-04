@@ -13,6 +13,7 @@ export default function HeaderMenu() {
     { label: "2BHK Flat ⭐ ", href: "/2bhk-apartment-for-rent-ulsoor" },
     { label: "Bangalore Flat ▶️", href: "/owner-2bhk-flat-for-rent-bangalore" },
     { label: "2BHK Flat 🤔", href: "/2bhk-flat-ulsoor-faq" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

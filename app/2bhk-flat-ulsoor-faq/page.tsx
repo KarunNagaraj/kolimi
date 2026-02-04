@@ -1,6 +1,6 @@
 "use client";
 
-import { card } from "../styles/mainStyles";
+import { card, layout } from "../styles/mainStyles";
 
 const textStyles = {
   pageTitle: "text-3xl font-bold text-gray-900 mb-4",
@@ -63,8 +63,7 @@ const faqData = [
 
 export default function FAQPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-6 px-4 sm:px-6 lg:px-8">
-
+     <main className={layout.page}>
       <div className={"bg-white rounded-2xl shadow-xl border border-gray-100 py-4 mb-1"}>
         <div className={textStyles.container}>
           <h1 className={textStyles.pageTitle}>

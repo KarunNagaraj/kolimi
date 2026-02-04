@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { layout } from "../styles/mainStyles";
 
+//MENU: label: "Bangalore Flat ▶️", href: "/owner-2bhk-flat-for-rent-bangalore" },
 /* Page 3 Youitube Video Google Sites and Map*/
 export default function Page() {
     return (
-        <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
+        <main className={layout.page}>
             <div className="mx-auto max-w-3xl">
                 {/* SEO H1 */}
                 <h1 className="text-3xl font-bold text-gray-900 mb-4">
@@ -17,9 +19,9 @@ export default function Page() {
 
                 {/* Internal link to main page */}
                 <p className="mt-6 text-gray-700">
-                    Back to Main Page{" "}
+                    Advertised Sites{" "}
                     <a
-                        href="/"
+                        href="https://www.99acres.com/2-bhk-bedroom-apartment-flat-for-rent-in-sandeep-kolimi-heights-ulsoor-bangalore-central-1525-sq-ft-spid-D88553648"
                         className="text-indigo-600 font-medium hover:underline"
                     >
                         owner-listed 2 BHK apartment for rent in Ulsoor, Bangalore
@@ -43,7 +45,7 @@ export default function Page() {
 
 const ExternalLinks = () => (
     <div className="mt-6 space-y-4">
-    
+
 
         {/* YouTube video */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
@@ -95,7 +97,7 @@ const ExternalLinks = () => (
             </p>
         </div>
 
-            {/* Google Sites card */}
+        {/* Google Sites card */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
             <div className="text-sm text-gray-600">
                 <span>Further info:</span>

@@ -44,6 +44,13 @@ export default function ContactPage() {
             <input type="text" name="name" required placeholder="Enter your full name" className={inputClass} />
           </div>
 
+           <div className="group">
+            <label className={labelClass}>
+              Age <span className="text-red-500">*</span>
+            </label>
+            <input type="text" name="age" required placeholder="Enter your age" className={inputClass} />
+          </div>
+
           <div className="group">
             <label className={labelClass}>
               Phone <span className="text-red-500">*</span>
@@ -60,19 +67,33 @@ export default function ContactPage() {
 
           <div className="group">
             <label className={labelClass}>
+              Educational Qualification<span className="text-red-500">*</span>
+            </label>
+            <input type="text" name="education" placeholder="Enter your Educational Qualification/Designation" className={inputClass} />
+          </div>
+
+          <div className="group">
+            <label className={labelClass}>
+              Company Name<span className="text-red-500">*</span>
+            </label>
+            <input type="text" name="company" placeholder="Enter Company Name where you work" className={inputClass} />
+          </div>
+
+          <div className="group">
+            <label className={labelClass}>
               Tenant Type <span className="text-red-500">*</span>
             </label>
             <select name="tenant_type" required className={selectClass}>
               <option value="">Select</option>
               <option value="Family">Family</option>
               <option value="Female">Female</option>
-              <option value="Other">Other</option>
+              <option value="Other">Male</option>
             </select>
           </div>
 
           <div className="group">
             <label className={labelClass}>Message</label>
-            <textarea name="message" rows={4} placeholder="Move-in date, number of occupants, etc." className={textareaClass} />
+            <textarea name="message" rows={4} placeholder="Preferred Visit Time, Move-in date, number of occupants,pets etc." className={textareaClass} />
           </div>
 
           <button
