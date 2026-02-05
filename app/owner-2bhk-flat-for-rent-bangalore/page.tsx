@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { layout } from "../styles/mainStyles";
+import BHKCarousal from "../components/BHKCarousal";
 
 //MENU: label: "Bangalore Flat ▶️", href: "/owner-2bhk-flat-for-rent-bangalore" },
 /* Page 3 Youitube Video Google Sites and Map*/
@@ -64,6 +65,8 @@ const ExternalLinks = () => (
             </div>
         </div>
 
+        <BHKCarousal />
+
         {/* Google map embed */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">
@@ -82,6 +85,9 @@ const ExternalLinks = () => (
             </div>
         </div>
 
+
+
+
         {/* Google Maps link */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
             <p className="text-sm text-gray-600">
@@ -96,6 +102,7 @@ const ExternalLinks = () => (
                 </a>
             </p>
         </div>
+
 
         {/* Google Sites card */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
