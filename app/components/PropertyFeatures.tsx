@@ -18,7 +18,7 @@ const features = [
   { name: '2 Bedrooms', icon: HomeIcon, bg: 'bg-indigo-50', text: 'text-indigo-600' },
   { name: '1 Attached Bathroom and   1 Common Bathroom', icon: BuildingOffice2Icon, bg: 'bg-blue-50', text: 'text-blue-600' },
   { name: 'Covered Car Parking', icon: TruckIcon, bg: 'bg-emerald-50', text: 'text-emerald-600' },
-  { name: '3rd Floor [Topmost Floor]', icon: Square3Stack3DIcon, bg: 'bg-purple-50', text: 'text-purple-600' },
+  { name: '3rd Floor [Top Floor]', icon: Square3Stack3DIcon, bg: 'bg-purple-50', text: 'text-purple-600' },
   { name: 'North Facing', icon: ArrowUpIcon, bg: 'bg-amber-50', text: 'text-amber-600' },
   { name: 'Semi-furnished', icon: CubeIcon, bg: 'bg-pink-50', text: 'text-pink-600' },
   { name: 'Modular Kitchen & Wardrobes', icon: BuildingStorefrontIcon, bg: 'bg-green-50', text: 'text-green-600' },

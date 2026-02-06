@@ -53,19 +53,7 @@ function FeatureCard({
 export default function Home() {
   return (
     <main className={layout.page}>
-      <a
-        href="/contact"
-        aria-label="Contact the owner"
-        className={cta.contactOwner}
-      >
-        Contact Owner
-      </a>
-
-
-
       <div className={layout.container}>
-
-
         {/* Header Card */}
         <div className={`${card.base} ${card.padded} mb-8`}>
           {/* Title */}
@@ -85,13 +73,13 @@ export default function Home() {
               className="w-full h-64 object-cover rounded-xl"
             />
           </div>
- 
+
 
           {/* Details Grid */}
           <div className={grid.features}>
             <FeatureCard
               label="Monthly Rent & Maintenance"
-              value="₹54,000 + ₹2,400(Maintenance)"
+              value="₹53,000 + ₹2,400(Maintenance)"
               bg="bg-gradient-indigo"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -103,7 +91,7 @@ export default function Home() {
             />
             <FeatureCard
               label="Security Deposit"
-              value="₹3,00,000"
+              value="₹2,50,000"
               bg="bg-gradient-to-br from-amber-50 to-orange-50"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -181,8 +169,16 @@ export default function Home() {
                 </div>
               }
             />
+          </div>
 
-
+          {/* Contact Owner */}
+          <div className="mt-6">
+            <a
+              href="/contact"
+              className={buttons.primary}
+            >
+              Contact Owner
+            </a>
           </div>
 
           {/* Additional Details */}
@@ -221,18 +217,6 @@ export default function Home() {
             Apartment Tour & Google Map: <a href="/owner-2bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
               owner-listed 2 BHK apartment for rent in Ulsoor</a> with zero brokerage.
           </p>
-        </div>
-
-
-
-        {/* Contact Owner */}
-        <div className="mt-6">
-          <a
-            href="/contact"
-            className={buttons.primary}
-          >
-            Contact Owner
-          </a>
         </div>
       </div>
       <form

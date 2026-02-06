@@ -83,10 +83,7 @@ const ExternalLinks = () => (
                     style={{ border: 0 }}
                 />
             </div>
-        </div>
-
-
-
+        </div> 
 
         {/* Google Maps link */}
         <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
@@ -101,40 +98,7 @@ const ExternalLinks = () => (
                     Kolimi Heights
                 </a>
             </p>
-        </div>
-
-
-        {/* Google Sites card */}
-        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
-            <div className="text-sm text-gray-600">
-                <span>Further info:</span>
-
-                <a
-                    href="https://sites.google.com/view/flat-rent-ulsoor-bangalore/2bhk-flat-for-rent-in-ulsoor-near-metro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block mt-6 overflow-hidden rounded-xl border hover:shadow-lg transition"
-                >
-                    <Image
-                        src="/images/ulsoor-2bhk-dining1.jpg"
-                        alt="2 BHK flat for rent in Ulsoor near metro"
-                        width={800}
-                        height={400}
-                        className="h-40 w-full object-cover"
-                    />
-                    <div className="p-4 bg-white">
-                        <h3 className="font-semibold text-gray-900">
-                            2BHK Flat for Rent – Ulsoor
-                        </h3>
-                        <p className="text-sm text-gray-600 mt-1">
-                            Near metro, Indiranagar and Behind Ashram • Spacious • Well Ventilated
-                        </p>
-                        <span className="text-sm font-medium text-indigo-600 mt-2 inline-block">
-                            View full property details →
-                        </span>
-                    </div>
-                </a>
-            </div>
-        </div>
+        </div> 
+        
     </div>
 );

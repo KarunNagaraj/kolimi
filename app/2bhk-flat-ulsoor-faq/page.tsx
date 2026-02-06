@@ -67,7 +67,7 @@ export default function FAQPage() {
       <div className={"bg-white rounded-2xl shadow-xl border border-gray-100 py-4 mb-1"}>
         <div className={textStyles.container}>
           <h1 className={textStyles.pageTitle}>
-            FAQ – 2BHK Flat in Ulsoor
+            FAQ – 2BHK Flat  for Rent in Ulsoor, Bangalore
           </h1>
 
           <div className="space-y-4">

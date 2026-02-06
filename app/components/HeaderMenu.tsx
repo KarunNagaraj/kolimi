@@ -9,11 +9,10 @@ export default function HeaderMenu() {
   const normalizePath = (path: string) => path.replace(/\/$/, "");
 
   const menuItems = [
-    { label: "2BHK Ulsoor 🏠", href: "/" },
+    { label: "Rent Ulsoor 🏠", href: "/" },
     { label: "2BHK Flat ⭐ ", href: "/2bhk-apartment-for-rent-ulsoor" },
     { label: "Bangalore Flat ▶️", href: "/owner-2bhk-flat-for-rent-bangalore" },
     { label: "2BHK Flat 🤔", href: "/2bhk-flat-ulsoor-faq" },
-    { label: "Contact", href: "/contact" },
   ];
 
   return (

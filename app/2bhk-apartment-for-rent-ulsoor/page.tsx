@@ -21,9 +21,25 @@ export default function Page() {
                     <PropertyFeatures />
                 </div>
 
-                {/* Floor Plan image */}
+                {/* Floor Plan image*/}
+
                 <div className="mt-8 bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900">Floor Plan of  2BHK for Rent in Ulsoor</h2>
+                <h2 className="text-2xl font-bold text-gray-900">3D Floor Plan of  2BHK for Rent in Ulsoor</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Area: 1290 SQFT</h2>
+                    <div className="mt-6">
+                        <Image
+                            src="/images/307/Ulsoor-bangalore-2BHK-rent-floorplan3d.png"
+                            alt="2 BHK apartment for rent in Ulsoor Bangalore"
+                            width={1200}
+                            height={800}
+                            className="h-80 w-full object-cover rounded-lg"
+                        />
+                    </div>
+                </div>
+
+                
+                <div className="mt-8 bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-900">Floor Plan of  2BHK for Rent in Ulsoor</h2> 
                     <div className="mt-6">
                         <Image
                             src="/images/2BHK REnt Bangalore Floor Plan.jpeg"
