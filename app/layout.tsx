@@ -1,4 +1,4 @@
-import "./globals.css"; 
+import "./globals.css";
 import { ReactNode } from "react";
 import HeaderMenu from "./components/HeaderMenu";
 
@@ -17,10 +17,14 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
- <html lang="en">
-  <head/>
-       <body className="min-h-screen">
-        <HeaderMenu />
+    <html lang="en">
+      <head />
+      <body className="min-h-screen">
+    
+       {/*<HeaderMenu activeMenu="2bhk"  or "blog"/>*/}
+        
+       
+        <HeaderMenu activeMenu="2bhk" />
         {/* Page content */}
         {children}
       </body>
