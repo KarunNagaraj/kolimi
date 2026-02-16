@@ -12,7 +12,7 @@ const textStyles = {
 
 const faqData = [
   {
-    question: "Is this 2BHK flat near Ulsoor Metro Station?",
+    question: "Is this 2BHK/3BHK flat near Ulsoor Metro Station?",
     answer: "Yes, the apartment is located close to Ulsoor Metro Station, making daily commute easy.",
   },
   {
