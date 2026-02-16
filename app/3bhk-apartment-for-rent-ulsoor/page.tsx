@@ -25,11 +25,11 @@ export default function Page() {
                 {/* Floor Plan image*/}
 
                 <div className="mt-8 bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900">3D Floor Plan of  2BHK for Rent in Ulsoor</h2>
-                <h2 className="text-2xl font-bold text-gray-900">Area: 1290 SQFT</h2>
+                <h2 className="text-2xl font-bold text-gray-900">3D Floor Plan of  3BHK for Rent in Ulsoor</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Area: 1740 SQFT</h2>
                     <div className="mt-6">
                         <Image
-                            src="/images/307/Ulsoor-bangalore-2BHK-rent-floorplan3d.png"
+                            src="/images/G4/3D apartment floor plan A4.png"
                             alt="2 BHK apartment for rent in Ulsoor Bangalore"
                             width={1200}
                             height={800}
@@ -40,7 +40,7 @@ export default function Page() {
 
                 
                 <div className="mt-8 bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900">Floor Plan of  2BHK for Rent in Ulsoor</h2> 
+                <h2 className="text-2xl font-bold text-gray-900">Floor Plan of  3BHK for Rent in Ulsoor</h2> 
                     <div className="mt-6">
                         <Image
                             src="/images/G4/3BHK Ulsoor Apartment Floor Plan Rent.gif"
@@ -52,15 +52,7 @@ export default function Page() {
                     </div>
                 </div>
 
-                <p className="mt-6 text-gray-700">
-                    Back to Main Page  {" "}
-                    <a
-                        href="/"
-                        className="inline-block px-4 py-2 bg-indigo-600 text-white font-medium rounded hover:bg-indigo-700 transition"
-                    >
-                        owner-listed 2 BHK apartment for rent in Ulsoor, Bangalore
-                    </a>.
-                </p>
+               
             </div>
         </main>
     );
