@@ -3,12 +3,12 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { cta, layout, card, typography, featureCard, grid, section, buttons, icons } from "../styles/mainStyles";
 
-import '../styles/friendly-pastel-gradients.css';
 // index.tsx or _app.tsx
-//MENU: { label: "2BHK Ulsoor 🏠", href: "/" }, 
+//MENU: { label: "2BHK Ulsoor 🏠", href: "/" },
+import '../styles/friendly-pastel-gradients.css';
 
 export const metadata = {
-  title: "3 BHK Apartment for Rent in Ulsoor, Bangalore | Owner | Near Metro",
+  title: "2 BHK Apartment for Rent in Ulsoor, Bangalore | Owner | Near Metro",
   description:
     "Owner-listed 2 BHK apartment for rent in Ulsoor, Bangalore. 1290 sqft with 2 bathrooms, balcony, gated community, lift & car parking. Near Ulsoor Metro.",
 };
@@ -50,7 +50,7 @@ function FeatureCard({
 }
 
 
-export default function ThreeBHKHome() {
+export default function TwoBHKHome() {
   return (
     <main className={layout.page}>
       <div className={layout.container}>
@@ -59,7 +59,7 @@ export default function ThreeBHKHome() {
           {/* Title */}
           <div className={section.borderedLeft}>
             <h1 className={typography.h1}>
-              3 BHK Apartment for Rent in Ulsoor, Bangalore
+              2 BHK Apartment for Rent in Ulsoor, Bangalore
             </h1>
           </div>
 
@@ -79,7 +79,7 @@ export default function ThreeBHKHome() {
           <div className={grid.features}>
             <FeatureCard
               label="Monthly Rent & Maintenance"
-              value="₹65,000 + ₹3,220(Maintenance)"
+              value="₹53,000 + ₹2,400(Maintenance)"
               bg="bg-gradient-indigo"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -91,7 +91,7 @@ export default function ThreeBHKHome() {
             />
             <FeatureCard
               label="Security Deposit"
-              value="₹3,00,000"
+              value="₹2,50,000"
               bg="bg-gradient-to-br from-amber-50 to-orange-50"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -103,7 +103,7 @@ export default function ThreeBHKHome() {
             />
             <FeatureCard
               label="Area"
-              value="1740 sqft"
+              value="1290 sqft"
               bg="bg-gradient-to-br from-emerald-50 to-green-50"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -115,7 +115,7 @@ export default function ThreeBHKHome() {
             />
             <FeatureCard
               label="Configuration"
-              value="3 Bedroom 3 Bathroom , 2 Balcony"
+              value="2 Bath, Balcony"
               bg="bg-gradient-to-br from-purple-50 to-pink-50"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -127,7 +127,7 @@ export default function ThreeBHKHome() {
             />
             <FeatureCard
               label="Availability"
-              value="19th April 2026"
+              value="4th March 2026"
               bg="bg-pastel-lavender"
               icon={
                 <div className={featureCard.iconWrapper}>
@@ -197,11 +197,11 @@ export default function ThreeBHKHome() {
           <p className={typography.body}>
             Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
             <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
-            Searching for a 2BHK/3BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
-            Renting a 2BHK/3BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.
+            Searching for a 2 BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
+            Renting a 2BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.
           </p>
           <br></br>
-          <h2 className={typography.h2}>Why Choose Ulsoor for a 2BHK/3BHK Apartment?</h2>
+          <h2 className={typography.h2}>Why Choose Ulsoor for a 2 BHK Apartment?</h2>
           <p className={typography.body}>
             Ulsoor is known for its balanced lifestyle — quiet residential streets combined with quick access to commercial areas. The locality is close to Indiranagar, MG Road, Domlur, and CBD, making daily commuting simple.
             The presence of Ulsoor Metro Station on the Purple Line significantly increases demand for 2 BHK apartments for rent in Ulsoor.
@@ -210,12 +210,12 @@ export default function ThreeBHKHome() {
           <h2 className={typography.h2}>Connectivity, Schools & Daily Conveniences</h2>
           <p className={typography.body}>
             Ulsoor offers seamless connectivity via metro, bus routes, and arterial roads. Leading schools, hospitals, supermarkets, and restaurants are located nearby.
-            This makes Ulsoor a preferred choice for tenants looking for spacious 2BHK/3BHK flats near metro stations in Bangalore.
+            This makes Ulsoor a preferred choice for tenants looking for spacious 2 BHK flats near metro stations in Bangalore.
           </p>
           <br></br>
           <p className={typography.body}>
-            Apartment Tour & Google Map: <a href="/owner-3bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
-              owner-listed 3BHK apartment for rent in Ulsoor</a> with zero brokerage.
+            Apartment Tour & Google Map: <a href="/owner-2bhk-flat-for-rent-bangalore" className="text-indigo-600 font-medium">
+              owner-listed 2 BHK apartment for rent in Ulsoor</a> with zero brokerage.
           </p>
         </div>
       </div>

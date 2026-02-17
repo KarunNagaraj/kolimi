@@ -5,7 +5,7 @@ import ThreeBHKPropertyFeatures from "../components/ThreeBHKPropertyFeatures";
 
 //MENU:  label: "2BHK Flat ⭐ ", href: "/2bhk-apartment-for-rent-ulsoor"
 /* Page 2  PropertyFeatures*/
-export default function Page() {
+export default function ThreeBHKPropertyFeaturesPage() {
     return (
         <main className={layout.page}>
 

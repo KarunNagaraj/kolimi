@@ -5,7 +5,7 @@ import G4BHKCarousal from "../components/G4BHKCarousal";
 
 //MENU: label: "Bangalore Flat ▶️", href: "/owner-2bhk-flat-for-rent-bangalore" },
 /* Page 3 Youitube Video Google Sites and Map*/
-export default function Page() {
+export default function ThreeBHKVideoPage() {
     return (
         <main className={layout.page}>
             <div className="mx-auto max-w-3xl">
