@@ -1,12 +1,13 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import HeaderMenu from "./components/HeaderMenu";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Kolimi Heights – Apartment Rental",
   description: "Apartment rental listing",
-  other: {
-    "google-site-verification": "HC5ZieXRA0zZ6oqSkrVvtZnFwyljPYvvzcUoU4zn4fw",
+  verification: {
+    google: "HC5ZieXRA0zZ6oqSkrVvtZnFwyljPYvvzcUoU4zn4fw",
   },
 };
 

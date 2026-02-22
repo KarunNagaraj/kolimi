@@ -10,7 +10,7 @@ import '../styles/friendly-pastel-gradients.css';
 export const metadata = {
   title: "3 BHK Apartment for Rent in Ulsoor, Bangalore | Owner | Near Metro",
   description:
-    "Owner-listed 2 BHK apartment for rent in Ulsoor, Bangalore. 1290 sqft with 2 bathrooms, balcony, gated community, lift & car parking. Near Ulsoor Metro.",
+    "Owner-listed 3 BHK apartment for rent in Ulsoor, Bangalore. 1740 sqft with 2 bathrooms, 2 balcony, gated community, lift & car parking. Near Ulsoor Metro.",
 };
 
 
@@ -195,7 +195,7 @@ export default function ThreeBHKHome() {
           <br></br>
           {/* Description */}
           <p className={typography.body}>
-            Well-ventilated <strong>2 BHK apartment on Third Floor</strong> available for rent in
+            Well-ventilated <strong>3 BHK apartment on Ground Floor</strong> available for rent in
             <strong> Kolimi Heights, Ulsoor</strong>.<strong>Gated Society</strong> Ideal for families and female tenants.
             Searching for a 2BHK/3BHK apartment for rent in Ulsoor, Bangalore? Ulsoor is one of the most preferred residential localities in central Bangalore, offering excellent metro connectivity, green surroundings, and proximity to major business hubs.
             Renting a 2BHK/3BHK flat in Ulsoor is ideal for families and professionals who want a peaceful neighborhood without compromising on connectivity.

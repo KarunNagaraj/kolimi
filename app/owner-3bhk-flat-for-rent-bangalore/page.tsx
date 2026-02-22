@@ -24,7 +24,7 @@ export default function ThreeBHKVideoPage() {
                 <div className="mt-6">
                     <Image
                         src="/images/ulsoor-2bhk-dining1.jpg"
-                        alt="2 BHK apartment for rent in Ulsoor Bangalore"
+                        alt="3 BHK apartment for rent in Ulsoor Bangalore"
                         width={800}
                         height={400}
                         className="h-40 w-full object-cover rounded-lg"
